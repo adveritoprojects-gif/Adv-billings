@@ -2,6 +2,7 @@ export interface SuperAdminActionResult {
   ok: boolean;
   errorKey?: string;
   id?: string;
+  invitationSent?: boolean;
 }
 
 export interface OrganizationListRow {

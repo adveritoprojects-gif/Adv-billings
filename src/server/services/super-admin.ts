@@ -11,6 +11,10 @@ import {
 } from "@/config/industry";
 import { hashPassword } from "@/server/auth/password";
 import { systemDb } from "@/server/db";
+import {
+  createUnusablePasswordHash,
+  inviteOrganizationOwner,
+} from "@/server/services/invitations";
 
 export const SUPER_ADMIN_ERRORS = {
   unauthenticated: "superAdmin.errors.unauthenticated",
@@ -39,6 +43,10 @@ export const SUPER_ADMIN_ERRORS = {
   invalidTemplate: "superAdmin.errors.invalidTemplate",
   invalidModule: "superAdmin.errors.invalidModule",
   emailTaken: "superAdmin.errors.emailTaken",
+  inviteFailed: "superAdmin.errors.inviteFailed",
+  inviteAlreadyAccepted: "superAdmin.errors.inviteAlreadyAccepted",
+  inviteNotFound: "superAdmin.errors.inviteNotFound",
+  inviteRateLimited: "superAdmin.errors.inviteRateLimited",
 } as const;
 
 export const MEMBER_ROLE_KEYS = [
@@ -394,7 +402,6 @@ export interface CreateOrganizationInput {
   templateKey?: unknown;
   ownerName: unknown;
   ownerEmail: unknown;
-  ownerPassword: unknown;
 }
 
 export async function createOrganization(
@@ -407,7 +414,6 @@ export async function createOrganization(
   const templateKey = str(input.templateKey, 40);
   const ownerName = str(input.ownerName, 120);
   const ownerEmail = str(input.ownerEmail, 200).toLowerCase();
-  const ownerPassword = str(input.ownerPassword, 200);
 
   if (!name || !slug) {
     return fail(SUPER_ADMIN_ERRORS.required);
@@ -445,16 +451,12 @@ export async function createOrganization(
   });
   let createdUser = false;
   if (!owner) {
-    if (ownerPassword.length < 8) {
-      return fail(SUPER_ADMIN_ERRORS.passwordShort);
-    }
     owner = await systemDb.user.create({
       data: {
         email: ownerEmail,
         name: ownerName,
-        passwordHash: await hashPassword(ownerPassword),
-        status: "ACTIVE",
-        emailVerified: new Date(),
+        passwordHash: await createUnusablePasswordHash(),
+        status: "INVITED",
       },
     });
     createdUser = true;
@@ -490,7 +492,7 @@ export async function createOrganization(
         organizationId: organization.id,
         userId: owner.id,
         roleId: ownerRole.id,
-        status: "ACTIVE",
+        status: "INVITED",
       },
     });
     const templateModuleKeys = new Set(template.modules);
@@ -559,7 +561,17 @@ export async function createOrganization(
     throw error;
   }
 
-  return { ok: true, id: organization.id };
+  const invitation = await inviteOrganizationOwner({
+    userId: owner.id,
+    organizationId: organization.id,
+    invitedById: actor.userId,
+  });
+
+  return {
+    ok: true,
+    id: organization.id,
+    invitationSent: invitation.sent,
+  };
 }
 
 export interface OnboardingPlanOption {
@@ -639,7 +651,6 @@ export interface OnboardOrganizationInput {
   modules: unknown;
   ownerName: unknown;
   ownerEmail: unknown;
-  ownerPassword: unknown;
   planKey: unknown;
 }
 
@@ -659,7 +670,8 @@ export interface OnboardOrganizationSummary {
   secondaryColor: string | null;
   status: string;
   createdAt: Date;
-  owner: { name: string; email: string };
+  owner: { id: string; name: string; email: string };
+  invitationSent?: boolean;
   plan: {
     key: string;
     name: string;
@@ -693,7 +705,6 @@ export async function onboardOrganization(
   const favicon = str(input.favicon, 500);
   const ownerName = str(input.ownerName, 120);
   const ownerEmail = str(input.ownerEmail, 200).toLowerCase();
-  const ownerPassword = str(input.ownerPassword, 200);
   const planKeyValue = str(input.planKey, 40).toUpperCase();
 
   if (!name || !slug) {
@@ -768,9 +779,6 @@ export async function onboardOrganization(
   const existingOwner = await systemDb.user.findUnique({
     where: { email: ownerEmail },
   });
-  if (!existingOwner && ownerPassword.length < 8) {
-    return fail(SUPER_ADMIN_ERRORS.passwordShort);
-  }
 
   const catalog = await systemDb.module.findMany({
     select: { id: true, key: true, isCore: true },
@@ -803,9 +811,8 @@ export async function onboardOrganization(
             data: {
               email: ownerEmail,
               name: ownerName,
-              passwordHash: await hashPassword(ownerPassword),
-              status: "ACTIVE",
-              emailVerified: new Date(),
+              passwordHash: await createUnusablePasswordHash(),
+              status: "INVITED",
             },
           });
         }
@@ -815,7 +822,7 @@ export async function onboardOrganization(
             organizationId: organization.id,
             userId: owner.id,
             roleId: ownerRole.id,
-            status: "ACTIVE",
+            status: "INVITED",
           },
         });
 
@@ -906,7 +913,7 @@ export async function onboardOrganization(
           secondaryColor: organization.secondaryColor,
           status: String(organization.status),
           createdAt: organization.createdAt,
-          owner: { name: owner.name, email: owner.email },
+          owner: { id: owner.id, name: owner.name, email: owner.email },
           plan: {
             key: String(plan.key),
             name: plan.name,
@@ -948,6 +955,13 @@ export async function onboardOrganization(
   } catch (error) {
     console.error("Failed to record onboarding audit:", error);
   }
+
+  const invitation = await inviteOrganizationOwner({
+    userId: summary.owner.id,
+    organizationId: summary.id,
+    invitedById: actor.userId,
+  });
+  summary.invitationSent = invitation.sent;
 
   return { ok: true, id: summary.id, organization: summary };
 }

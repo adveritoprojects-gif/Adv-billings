@@ -30,7 +30,6 @@ const BASE_INPUT = {
   modules: ["orders", "products"],
   ownerName: "Bluebird Owner",
   ownerEmail: "owner-bistro@onboarding.test",
-  ownerPassword: "Password123!",
   planKey: "STARTER",
 };
 
@@ -107,17 +106,6 @@ async function main() {
     "invalid color rejected",
   );
 
-  const shortPassword = await onboardOrganization(actor, {
-    ...BASE_INPUT,
-    slug: "validation-password",
-    ownerEmail: "short-pass@onboarding.test",
-    ownerPassword: "abc",
-  });
-  expect(
-    !shortPassword.ok && shortPassword.errorKey?.includes("passwordShort"),
-    "short password rejected for new owner",
-  );
-
   const afterValidation = await getPlatformMetrics();
   expect(
     afterValidation.totalOrganizations === 3,
@@ -140,6 +128,20 @@ async function main() {
   expect(summary.plan.state === "ACTIVE", "paid plan starts active");
   expect(summary.modules.join(",") === "orders,products", "summary carries modules");
   expect(summary.roles.join(",") === "shift-lead", "summary carries custom roles");
+  expect(
+    typeof summary.invitationSent === "boolean",
+    "onboarding reports whether the invitation email was sent",
+  );
+
+  const summaryOwner = await systemDb.user.findUnique({
+    where: { email: summary.owner.email },
+    select: { status: true },
+  });
+  expect(summaryOwner?.status === "INVITED", "new owner starts as INVITED");
+  const summaryInvite = await systemDb.invitation.findFirst({
+    where: { organizationId: summary.id },
+  });
+  expect(summaryInvite !== null, "an invitation was issued for the owner");
 
   const org = await systemDb.organization.findUnique({
     where: { id: summary.id },
@@ -239,7 +241,6 @@ async function main() {
     name: "Bluebird Bistro Two",
     ownerName: "Other Owner",
     ownerEmail: "owner-bistro-2@onboarding.test",
-    ownerPassword: "Password123!",
   });
   expect(
     !duplicate.ok && duplicate.errorKey?.includes("slugTaken"),
@@ -272,7 +273,6 @@ async function main() {
     modules: ["students", "courses"],
     ownerName: "Campus Owner",
     ownerEmail: "owner-campus@onboarding.test",
-    ownerPassword: "Password123!",
     planKey: "FREE_TRIAL",
   });
   expect(trial.ok, "trial organization created");
@@ -315,7 +315,6 @@ async function main() {
     modules: ["products", "inventory", "orders", "suppliers"],
     ownerName: "Ignored Existing Name",
     ownerEmail: "owner-b@org-b.test",
-    ownerPassword: "",
     planKey: "BUSINESS",
   });
   expect(reuse.ok, "existing user attached as owner without a password");

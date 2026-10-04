@@ -860,8 +860,7 @@
         "templateHint": "Sets the default modules, navigation, roles and dashboard widgets.",
         "ownerName": "Owner name",
         "ownerEmail": "Owner email",
-        "ownerPassword": "Owner password",
-        "ownerHint": "For new users only — minimum 8 characters. Existing users are added as owners.",
+        "ownerHint": "The owner receives an email invitation to activate their account and set their own password.",
         "submit": "Create organization"
       }
     },
@@ -926,8 +925,7 @@
         "description": "The owner gets full administrative access to the organization.",
         "name": "Owner name",
         "email": "Owner email",
-        "password": "Password",
-        "passwordHint": "Minimum 8 characters. Leave empty if the email already belongs to an existing user."
+        "inviteHint": "The owner receives a secure activation link by email and sets their own password. You can resend the invitation any time."
       },
       "subscription": {
         "title": "Subscription",
@@ -947,9 +945,7 @@
         "owner": "Owner",
         "subscription": "Subscription",
         "notSet": "Not set",
-        "templateDefaults": "Template defaults",
-        "passwordSet": "Password set",
-        "passwordExisting": "Existing user — no password"
+        "templateDefaults": "Template defaults"
       },
       "confirm": {
         "title": "Create organization",
@@ -979,7 +975,10 @@
           "CANCELLED": "Cancelled",
           "EXPIRED": "Expired",
           "SUSPENDED": "Suspended"
-        }
+        },
+        "invitation": "Owner invitation",
+        "inviteSent": "Invitation email sent",
+        "inviteFailed": "Invitation email failed to send"
       }
     },
     "detail": {
@@ -1096,6 +1095,20 @@
           "AUDIT": "Audit"
         },
         "by": "by"
+      },
+      "invitation": {
+        "title": "Owner invitation",
+        "email": "Invited email",
+        "expires": "Link expires",
+        "acceptedNote": "The owner has activated this account. No invitation is pending.",
+        "missingNote": "No invitation has been issued for this organization.",
+        "statuses": {
+          "pending": "Pending",
+          "accepted": "Accepted",
+          "expired": "Expired",
+          "revoked": "Revoked",
+          "none": "Not issued"
+        }
       }
     },
     "auditLog": {
@@ -1155,7 +1168,16 @@
       "invalidColor": "Enter a valid hex color such as #465fff.",
       "invalidTemplate": "Choose a valid industry template.",
       "invalidModule": "That module is not part of the selected template.",
-      "emailTaken": "That email address is already registered."
+      "emailTaken": "That email address is already registered.",
+      "inviteFailed": "The invitation email could not be sent. Please try again.",
+      "inviteAlreadyAccepted": "This invitation has already been accepted.",
+      "inviteNotFound": "No pending invitation found for this organization.",
+      "inviteRateLimited": "Too many resend attempts. Please wait a few minutes and try again."
+    },
+    "invitation": {
+      "resend": "Resend invitation",
+      "resending": "Sending...",
+      "resendSuccess": "Invitation email sent."
     }
   },
   "templates": {
@@ -1961,5 +1983,32 @@
     "title": "Calendar",
     "description": "Manage leads, follow-ups, and tasks on a shared calendar.",
     "breadcrumb": "Calendar"
+  },
+  "acceptInvitation": {
+    "title": "Activate your account",
+    "description": "{ownerName}, you have been invited to join {organizationName}. Set a password to activate your account.",
+    "descriptionExisting": "{ownerName}, you have been invited to join {organizationName}. Confirm to continue.",
+    "expiresAt": "This link expires on {when}.",
+    "supportNote": "Did not expect this email? You can safely ignore it. For help, contact adveritoprojects@gmail.com.",
+    "password": "Password",
+    "passwordPlaceholder": "Enter a password",
+    "passwordHint": "Use at least 8 characters.",
+    "confirmPassword": "Confirm password",
+    "confirmPasswordPlaceholder": "Re-enter the password",
+    "showPassword": "Show password",
+    "hidePassword": "Hide password",
+    "submit": "Activate account",
+    "submitting": "Activating...",
+    "generic": "Something went wrong. Please try again.",
+    "invalid": "This invitation link is not valid.",
+    "rateLimited": "Too many attempts. Please wait a few minutes and try again.",
+    "passwordMismatch": "The passwords do not match.",
+    "passwordWeak": "Password must be at least 8 characters.",
+    "status": {
+      "invalid": "This invitation link is not valid.",
+      "expired": "This invitation link has expired. Ask the sender to resend it.",
+      "revoked": "This invitation link has been replaced by a newer one.",
+      "consumed": "This invitation has already been used. Sign in instead."
+    }
   }
 }

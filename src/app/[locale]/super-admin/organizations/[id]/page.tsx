@@ -5,6 +5,8 @@ import OrgActivityCard from "@/components/super-admin/OrgActivityCard";
 import OrgBrandingForm from "@/components/super-admin/OrgBrandingForm";
 import OrgBusinessCard from "@/components/super-admin/OrgBusinessCard";
 import OrgModulesCard from "@/components/super-admin/OrgModulesCard";
+import OrgInvitationCard from "@/components/super-admin/OrgInvitationCard";
+import { resolveInvitationState } from "@/components/super-admin/invitationState";
 import OrgSettingsForm from "@/components/super-admin/OrgSettingsForm";
 import OrgSubscriptionCard, {
   type PlanOption,
@@ -37,22 +39,47 @@ export default async function SuperAdminOrganizationDetailPage({
     notFound();
   }
 
-  const [plans, roles, activityRows] = await Promise.all([
-    systemDb.plan.findMany({
-      where: { isActive: true },
-      orderBy: { priceCents: "asc" },
-    }),
-    systemDb.role.findMany({
-      where: { organizationId: null, isSystem: true },
-      orderBy: { name: "asc" },
-    }),
-    systemDb.activityLog.findMany({
-      where: { organizationId: detail.id },
-      take: 25,
-      orderBy: { createdAt: "desc" },
-      include: { actor: { select: { name: true } } },
-    }),
-  ]);
+  const [plans, roles, activityRows, latestInvitation, ownerMembership] =
+    await Promise.all([
+      systemDb.plan.findMany({
+        where: { isActive: true },
+        orderBy: { priceCents: "asc" },
+      }),
+      systemDb.role.findMany({
+        where: { organizationId: null, isSystem: true },
+        orderBy: { name: "asc" },
+      }),
+      systemDb.activityLog.findMany({
+        where: { organizationId: detail.id },
+        take: 25,
+        orderBy: { createdAt: "desc" },
+        include: { actor: { select: { name: true } } },
+      }),
+      systemDb.invitation.findFirst({
+        where: { organizationId: detail.id },
+        orderBy: { createdAt: "desc" },
+        select: {
+          email: true,
+          expiresAt: true,
+          consumedAt: true,
+          revokedAt: true,
+        },
+      }),
+      systemDb.organizationMember.findFirst({
+        where: { organizationId: detail.id, role: { key: "owner" } },
+        select: {
+          status: true,
+          user: { select: { status: true, email: true } },
+        },
+      }),
+    ]);
+
+  const invitationState = resolveInvitationState({
+    invitation: latestInvitation,
+    ownerAccepted:
+      ownerMembership?.status === "ACTIVE" &&
+      ownerMembership.user.status === "ACTIVE",
+  });
 
   const planOptions: PlanOption[] = plans.map((plan) => ({
     key: String(plan.key),
@@ -129,6 +156,15 @@ export default async function SuperAdminOrganizationDetailPage({
         <OrgModulesCard
           organizationId={detail.id}
           modules={detail.modules}
+        />
+
+        <OrgInvitationCard
+          organizationId={detail.id}
+          email={latestInvitation?.email ?? ownerMembership?.user.email ?? null}
+          state={invitationState}
+          expiresAt={
+            invitationState === "pending" ? latestInvitation?.expiresAt ?? null : null
+          }
         />
 
         <UsageSection snapshots={snapshots} />

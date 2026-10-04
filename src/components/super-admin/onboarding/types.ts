@@ -25,7 +25,6 @@ export interface WizardState {
   moduleKeys: string[];
   ownerName: string;
   ownerEmail: string;
-  ownerPassword: string;
   planKey: string;
 }
 

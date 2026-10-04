@@ -20,6 +20,14 @@ const nextConfig: NextConfig = {
           },
         ],
       },
+      {
+        source: "/accept-invitation",
+        headers: [
+          { key: "Referrer-Policy", value: "no-referrer" },
+          { key: "X-Robots-Tag", value: "noindex, nofollow" },
+          { key: "Cache-Control", value: "no-store" },
+        ],
+      },
     ];
   },
   webpack(config) {

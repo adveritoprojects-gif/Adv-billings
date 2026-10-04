@@ -448,7 +448,6 @@ async function main() {
     templateKey: "bogus",
     ownerName: "Owner",
     ownerEmail: "template-bad-owner@sa.test",
-    ownerPassword: "Password123!",
   });
   expect(
     badTemplate.ok === false &&
@@ -463,7 +462,6 @@ async function main() {
     templateKey: "education",
     ownerName: "Edu Owner",
     ownerEmail: "edu-owner@sa.test",
-    ownerPassword: "Password123!",
   });
   expect(created.ok === true && created.id, "createOrganization applies a template");
   const createdId = created.id!;

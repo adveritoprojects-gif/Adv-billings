@@ -81,7 +81,6 @@ async function main() {
     businessType: "",
     ownerName: "",
     ownerEmail: "",
-    ownerPassword: "",
   });
   expect(
     required.ok === false && required.errorKey === SUPER_ADMIN_ERRORS.required,
@@ -94,7 +93,6 @@ async function main() {
     businessType: "test",
     ownerName: "Owner",
     ownerEmail: "bad-slug-owner@sa.test",
-    ownerPassword: "Password123!",
   });
   expect(
     badSlug.ok === false && badSlug.errorKey === SUPER_ADMIN_ERRORS.slugInvalid,
@@ -107,25 +105,10 @@ async function main() {
     businessType: "test",
     ownerName: "Owner",
     ownerEmail: "not-an-email",
-    ownerPassword: "Password123!",
   });
   expect(
     badEmail.ok === false && badEmail.errorKey === SUPER_ADMIN_ERRORS.invalidEmail,
     "createOrganization rejects an invalid owner email",
-  );
-
-  const shortPassword = await createOrganization(actor, {
-    name: "Short Password Co",
-    slug: "short-password-co",
-    businessType: "test",
-    ownerName: "Shorty",
-    ownerEmail: "short-pass@sa.test",
-    ownerPassword: "short",
-  });
-  expect(
-    shortPassword.ok === false &&
-      shortPassword.errorKey === SUPER_ADMIN_ERRORS.passwordShort,
-    "createOrganization rejects a short password for new owners",
   );
 
   const badTemplate = await createOrganization(actor, {
@@ -135,7 +118,6 @@ async function main() {
     templateKey: "not-a-template",
     ownerName: "Owner",
     ownerEmail: "bad-template-owner@sa.test",
-    ownerPassword: "Password123!",
   });
   expect(
     badTemplate.ok === false &&
@@ -149,10 +131,39 @@ async function main() {
     businessType: "testing",
     ownerName: "Tess Owner",
     ownerEmail: "test-owner@sa.test",
-    ownerPassword: "Password123!",
   });
   expect(orgOne.ok === true && orgOne.id, "createOrganization creates Test Co");
   const orgOneId = orgOne.id!;
+
+  const orgOneOwner = await systemDb.user.findUnique({
+    where: { email: "test-owner@sa.test" },
+    select: { id: true, status: true, emailVerified: true },
+  });
+  expect(orgOneOwner?.status === "INVITED", "new owner starts as INVITED");
+  expect(
+    orgOneOwner?.emailVerified === null,
+    "owner email stays unverified until activation",
+  );
+  const orgOneMembership = await systemDb.organizationMember.findUnique({
+    where: {
+      organizationId_userId: {
+        organizationId: orgOneId,
+        userId: orgOneOwner?.id ?? "",
+      },
+    },
+  });
+  expect(
+    orgOneMembership?.status === "INVITED",
+    "owner membership starts as INVITED",
+  );
+  const orgOneInvite = await systemDb.invitation.findFirst({
+    where: { organizationId: orgOneId },
+  });
+  expect(orgOneInvite !== null, "an invitation was issued for the owner");
+  expect(
+    (orgOneInvite?.tokenHash.length ?? 0) === 64,
+    "invitation token is stored as a sha256 hash",
+  );
 
   const detailOne = await getOrganizationDetail(orgOneId);
   expect(detailOne !== null, "Test Co detail resolves");
@@ -198,7 +209,6 @@ async function main() {
     businessType: "test",
     ownerName: "Owner",
     ownerEmail: "dup-owner@sa.test",
-    ownerPassword: "Password123!",
   });
   expect(
     duplicateSlug.ok === false &&
@@ -212,7 +222,6 @@ async function main() {
     businessType: "test",
     ownerName: "Owner",
     ownerEmail: "platform-imposter@sa.test",
-    ownerPassword: "Password123!",
   });
   expect(
     platformSlug.ok === false &&
@@ -227,7 +236,6 @@ async function main() {
     templateKey: "retail",
     ownerName: "Tess Owner",
     ownerEmail: "test-owner@sa.test",
-    ownerPassword: "",
   });
   expect(
     orgTwo.ok === true && orgTwo.id,

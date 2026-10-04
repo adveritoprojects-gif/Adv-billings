@@ -147,12 +147,6 @@ const ReviewStep: React.FC<ReviewStepProps> = ({ value, modules, plans }) => {
             label: tO("owner.email"),
             value: valueOrNotSet(value.ownerEmail),
           },
-          {
-            label: tO("owner.password"),
-            value: value.ownerPassword
-              ? tO("review.passwordSet")
-              : tO("review.passwordExisting"),
-          },
         ]}
       />
 

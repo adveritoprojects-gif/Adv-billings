@@ -170,6 +170,7 @@ model User {
 
   memberships OrganizationMember[]
   sessions    Session[]
+  invitations Invitation[]
   activities  ActivityLog[]        @relation("ActivityActor")
 
   platformAuditLogs PlatformAuditLog[] @relation("PlatformAuditActor")
@@ -205,6 +206,27 @@ model Session {
   @@index([expiresAt])
 }
 
+model Invitation {
+  id             String    @id @default(cuid())
+  tokenHash      String    @unique
+  userId         String
+  organizationId String
+  email          String
+  expiresAt      DateTime
+  consumedAt     DateTime?
+  revokedAt      DateTime?
+  invitedById    String?
+  createdAt      DateTime  @default(now())
+  updatedAt      DateTime  @updatedAt
+
+  user         User         @relation(fields: [userId], references: [id], onDelete: Cascade)
+  organization Organization @relation(fields: [organizationId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@index([organizationId])
+  @@index([expiresAt])
+}
+
 model Organization {
   id              String             @id @default(cuid())
   name            String
@@ -232,6 +254,7 @@ model Organization {
   members      OrganizationMember[]
   roles        Role[]
   sessions     Session[]
+  invitations  Invitation[]
   subscription Subscription?
   modules      OrganizationModule[]
   settings     Setting[]

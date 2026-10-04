@@ -53,7 +53,6 @@ function initialState(plans: WizardPlanOption[]): WizardState {
     moduleKeys: [...template.modules],
     ownerName: "",
     ownerEmail: "",
-    ownerPassword: "",
     planKey: plans[0]?.key ?? "",
   };
 }
@@ -143,7 +142,6 @@ const OnboardingWizard: React.FC<OnboardingWizardProps> = ({
     );
     formData.set("ownerName", state.ownerName);
     formData.set("ownerEmail", state.ownerEmail);
-    formData.set("ownerPassword", state.ownerPassword);
     formData.set("planKey", state.planKey);
     startTransition(async () => {
       const result = await onboardOrganizationAction(formData);

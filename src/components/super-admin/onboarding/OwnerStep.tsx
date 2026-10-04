@@ -35,18 +35,8 @@ const OwnerStep: React.FC<OwnerStepProps> = ({ value, onChange }) => {
           />
         </div>
         <div className="sm:col-span-2">
-          <Label htmlFor="wiz-owner-password">{tO("owner.password")}</Label>
-          <Input
-            id="wiz-owner-password"
-            type="password"
-            autoComplete="new-password"
-            value={value.ownerPassword}
-            onChange={(event) =>
-              onChange({ ownerPassword: event.target.value })
-            }
-          />
-          <p className="mt-1 text-theme-xs text-gray-400">
-            {tO("owner.passwordHint")}
+          <p className="text-theme-xs text-gray-400 dark:text-gray-500">
+            {tO("owner.inviteHint")}
           </p>
         </div>
       </div>

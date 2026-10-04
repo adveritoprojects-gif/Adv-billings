@@ -3,6 +3,11 @@
 import { getAuthContext } from "@/server/auth/context";
 import { isSuperAdmin } from "@/server/auth/permissions";
 import {
+  isResendRateLimited,
+  recordResendAttempt,
+  resendInvitation,
+} from "@/server/services/invitations";
+import {
   SUPER_ADMIN_ERRORS,
   addMember,
   assignPlan,
@@ -65,7 +70,6 @@ export async function createOrganizationAction(
       templateKey: formData.get("templateKey"),
       ownerName: formData.get("ownerName"),
       ownerEmail: formData.get("ownerEmail"),
-      ownerPassword: formData.get("ownerPassword"),
     }),
   );
 }
@@ -90,7 +94,6 @@ export async function onboardOrganizationAction(
       modules: formData.getAll("modules"),
       ownerName: formData.get("ownerName"),
       ownerEmail: formData.get("ownerEmail"),
-      ownerPassword: formData.get("ownerPassword"),
       planKey: formData.get("planKey"),
     }),
   );
@@ -207,4 +210,33 @@ export async function removeMemberAction(
   memberId: string,
 ): Promise<SuperAdminActionResult> {
   return runSuperAdmin((actor) => removeMember(actor, organizationId, memberId));
+}
+
+const INVITE_FAILURE_KEYS = {
+  notFound: SUPER_ADMIN_ERRORS.inviteNotFound,
+  alreadyAccepted: SUPER_ADMIN_ERRORS.inviteAlreadyAccepted,
+  inviteFailed: SUPER_ADMIN_ERRORS.inviteFailed,
+} as const;
+
+export async function resendInvitationAction(
+  organizationId: string,
+): Promise<SuperAdminActionResult> {
+  return runSuperAdmin(async (actor) => {
+    if (isResendRateLimited(organizationId)) {
+      return { ok: false, errorKey: SUPER_ADMIN_ERRORS.inviteRateLimited };
+    }
+    recordResendAttempt(organizationId);
+    const result = await resendInvitation({
+      organizationId,
+      invitedById: actor.userId,
+    });
+    if (!result.ok) {
+      return {
+        ok: false,
+        errorKey:
+          INVITE_FAILURE_KEYS[result.reason] ?? SUPER_ADMIN_ERRORS.inviteFailed,
+      };
+    }
+    return { ok: true, id: organizationId, invitationSent: true };
+  });
 }

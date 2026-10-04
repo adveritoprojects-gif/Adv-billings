@@ -2,6 +2,7 @@ import Button from "@/components/ui/button/Button";
 import { useRouter } from "@/i18n/navigation";
 import { ArrowRightIcon, CheckCircleIcon } from "@/icons";
 import { useLocale, useTranslations } from "next-intl";
+import ResendInvitationButton from "@/components/super-admin/ResendInvitationButton";
 import type { WizardModuleOption, WizardSuccess } from "./types";
 
 interface SuccessScreenProps {
@@ -35,6 +36,16 @@ const SuccessScreen: React.FC<SuccessScreenProps> = ({
     },
     { label: tO("success.owner"), value: success.owner.name },
     { label: tO("success.email"), value: success.owner.email },
+    {
+      label: tO("success.invitation"),
+      value: success.invitationSent ? (
+        tO("success.inviteSent")
+      ) : (
+        <span className="text-error-600 dark:text-error-400">
+          {tO("success.inviteFailed")}
+        </span>
+      ),
+    },
     { label: tO("success.plan"), value: success.plan.name },
     {
       label: tO("success.state"),
@@ -96,7 +107,8 @@ const SuccessScreen: React.FC<SuccessScreenProps> = ({
         ))}
       </dl>
 
-      <div className="flex flex-col gap-3 sm:flex-row sm:justify-end">
+      <div className="flex flex-col gap-3 sm:flex-row sm:justify-end sm:items-center">
+        <ResendInvitationButton organizationId={success.id} />
         <Button
           variant="outline"
           onClick={onCreateAnother}
