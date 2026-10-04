@@ -1,0 +1,1965 @@
+{
+  "common": {
+    "home": "Home",
+    "edit": "Edit",
+    "close": "Close",
+    "saveChanges": "Save Changes",
+    "viewMore": "View More",
+    "delete": "Delete",
+    "filter": "Filter",
+    "seeAll": "See all",
+    "breadcrumb": {
+      "home": "Home"
+    }
+  },
+  "sidebar": {
+    "groups": {
+      "menu": "Menu",
+      "support": "Support",
+      "others": "Others"
+    },
+    "badges": {
+      "new": "new",
+      "pro": "pro"
+    },
+    "items": {
+      "dashboard": "Dashboard",
+      "ecommerceHome": "Ecommerce",
+      "analytics": "Analytics",
+      "marketing": "Marketing",
+      "crm": "CRM",
+      "stocks": "Stocks",
+      "saas": "SaaS",
+      "logistics": "Logistics",
+      "ai": "AI",
+      "sales": "Sales",
+      "finance": "Finance",
+      "aiAssistant": "AI Assistant",
+      "textGenerator": "Text Generator",
+      "imageGenerator": "Image Generator",
+      "codeGenerator": "Code Generator",
+      "videoGenerator": "Video Generator",
+      "aiSettings": "AI Settings",
+      "ecommerce": "E-commerce",
+      "products": "Products",
+      "addProduct": "Add Product",
+      "billing": "Billing",
+      "invoices": "Invoices",
+      "singleInvoice": "Single Invoice",
+      "createInvoice": "Create Invoice",
+      "transactions": "Transactions",
+      "singleTransaction": "Single Transaction",
+      "calendar": "Calendar",
+      "userProfile": "User Profile",
+      "task": "Task",
+      "taskList": "List",
+      "kanban": "Kanban",
+      "forms": "Forms",
+      "formElements": "Form Elements",
+      "formLayout": "Form Layout",
+      "tables": "Tables",
+      "basicTables": "Basic Tables",
+      "dataTables": "Data Tables",
+      "pages": "Pages",
+      "fileManager": "File Manager",
+      "pricingTables": "Pricing Tables",
+      "faq": "FAQ",
+      "apiKeys": "API Keys",
+      "integrations": "Integrations",
+      "blankPage": "Blank Page",
+      "error404": "404 Error",
+      "error500": "500 Error",
+      "error503": "503 Error",
+      "comingSoon": "Coming Soon",
+      "maintenance": "Maintenance",
+      "successPage": "Success",
+      "layouts": "Layouts",
+      "layoutOne": "Layout One",
+      "layoutTwo": "Layout Two",
+      "layoutThree": "Layout Three",
+      "layoutFour": "Layout Four",
+      "layoutFive": "Layout Five",
+      "layoutSix": "Layout Six",
+      "charts": "Charts",
+      "lineChart": "Line Chart",
+      "barChart": "Bar Chart",
+      "pieChart": "Pie Chart",
+      "radarChart": "Radar Chart",
+      "radialChart": "Radial Chart",
+      "maps": "Maps",
+      "mapsGoogle": "Maps",
+      "vectorMap": "Vector Map",
+      "uiElements": "UI Elements",
+      "alerts": "Alerts",
+      "avatar": "Avatar",
+      "badge": "Badge",
+      "breadcrumb": "Breadcrumb",
+      "buttons": "Buttons",
+      "buttonsGroup": "Buttons Group",
+      "cards": "Cards",
+      "carousel": "Carousel",
+      "dropdowns": "Dropdowns",
+      "images": "Images",
+      "links": "Links",
+      "listView": "List",
+      "modals": "Modals",
+      "notificationUi": "Notification",
+      "pagination": "Pagination",
+      "popovers": "Popovers",
+      "progressbar": "Progressbar",
+      "ribbons": "Ribbons",
+      "spinners": "Spinners",
+      "tabs": "Tabs",
+      "tooltips": "Tooltips",
+      "videos": "Videos",
+      "authentication": "Authentication",
+      "signIn": "Sign In",
+      "signUp": "Sign Up",
+      "resetPassword": "Reset Password",
+      "twoStepVerification": "Two Step Verification",
+      "chat": "Chat",
+      "supportMenu": "Support",
+      "supportList": "Support List",
+      "supportReply": "Support Reply",
+      "email": "Email",
+      "inbox": "Inbox",
+      "inboxDetails": "Details",
+      "leads": "Leads",
+      "contacts": "Contacts",
+      "customers": "Customers",
+      "deals": "Deals",
+      "tasks": "Tasks",
+      "projects": "Projects",
+      "expenses": "Expenses",
+      "reports": "Reports",
+      "settings": "Settings",
+      "companies": "Companies",
+      "activities": "Activities",
+      "overview": "Overview",
+      "business": "Business",
+      "branding": "Branding",
+      "users": "Users",
+      "roles": "Roles",
+      "modules": "Modules",
+      "inventory": "Inventory",
+      "orders": "Orders",
+      "suppliers": "Suppliers",
+      "students": "Students",
+      "courses": "Courses",
+      "staff": "Staff"
+    },
+    "widget": {
+      "title": "Current plan",
+      "description": "Your organization is running on the {plan} plan.",
+      "manage": "Manage plan"
+    },
+    "freePlan": "Free plan"
+  },
+  "header": {
+    "searchPlaceholder": "Search or type command...",
+    "toggleSidebar": "Toggle Sidebar",
+    "notifications": {
+      "title": "Notification",
+      "requestsPermission": "requests permission to change",
+      "project": "Project",
+      "minAgo": "{count} min ago",
+      "hrAgo": "{count} hr ago",
+      "viewAll": "View All Notifications"
+    },
+    "toggleMenu": "Toggle menu",
+    "search": "Search",
+    "themeToggle": "Toggle theme"
+  },
+  "userDropdown": {
+    "editProfile": "Edit profile",
+    "accountSettings": "Account settings",
+    "support": "Support",
+    "language": "Language",
+    "signOut": "Sign out"
+  },
+  "ecommerce": {
+    "title": "E-commerce Dashboard",
+    "metrics": {
+      "customers": "Customers",
+      "orders": "Orders"
+    },
+    "months": {
+      "jan": "Jan",
+      "feb": "Feb",
+      "mar": "Mar",
+      "apr": "Apr",
+      "may": "May",
+      "jun": "Jun",
+      "jul": "Jul",
+      "aug": "Aug",
+      "sep": "Sep",
+      "oct": "Oct",
+      "nov": "Nov",
+      "dec": "Dec"
+    },
+    "monthlySales": {
+      "title": "Monthly Sales",
+      "series": "Sales"
+    },
+    "monthlyTarget": {
+      "title": "Monthly Target",
+      "subtitle": "Target you’ve set for each month",
+      "earned": "You earn {amount} today, it's higher than last month. Keep up your good work!",
+      "target": "Target",
+      "revenue": "Revenue",
+      "today": "Today"
+    },
+    "statistics": {
+      "title": "Statistics",
+      "subtitle": "Target you've set for each month",
+      "sales": "Sales",
+      "revenue": "Revenue",
+      "monthly": "Monthly",
+      "quarterly": "Quarterly",
+      "annually": "Annually",
+      "selectDateRange": "Select date range"
+    },
+    "recentOrders": {
+      "title": "Recent Orders",
+      "products": "Products",
+      "category": "Category",
+      "price": "Price",
+      "status": "Status",
+      "variants": "{count, plural, one {# Variant} other {# Variants}}",
+      "categories": {
+        "laptop": "Laptop",
+        "watch": "Watch",
+        "smartphone": "SmartPhone",
+        "electronics": "Electronics",
+        "accessories": "Accessories"
+      },
+      "statuses": {
+        "delivered": "Delivered",
+        "pending": "Pending",
+        "canceled": "Canceled"
+      }
+    },
+    "demographic": {
+      "title": "Customers Demographic",
+      "subtitle": "Number of customer based on country",
+      "customers": "{count} Customers",
+      "usa": "USA",
+      "france": "France"
+    }
+  },
+  "analytics": {
+    "metrics": {
+      "uniqueVisitors": "Unique Visitors",
+      "totalPageviews": "Total Pageviews",
+      "bounceRate": "Bounce Rate",
+      "visitDuration": "Visit Duration",
+      "vsLastMonth": "Vs last month"
+    },
+    "barChart": {
+      "title": "Analytics",
+      "subtitle": "Visitor analytics of last 30 days"
+    },
+    "topChannels": {
+      "title": "Top Channels",
+      "source": "Source",
+      "visitors": "Visitors",
+      "channelsReport": "Channels Report"
+    },
+    "topPages": {
+      "title": "Top Pages",
+      "source": "Source",
+      "pageview": "Pageview",
+      "channelsReport": "Channels Report"
+    },
+    "activeUsers": {
+      "title": "Active Users",
+      "liveVisitors": "Live visitors",
+      "avgDaily": "Avg, Daily",
+      "avgWeekly": "Avg, Weekly",
+      "avgMonthly": "Avg, Monthly"
+    },
+    "acquisitionChannels": {
+      "title": "Acquisition Channels"
+    },
+    "session": {
+      "title": "Sessions By Device"
+    },
+    "recentOrders": {
+      "title": "Recent Orders",
+      "products": "Products",
+      "category": "Category",
+      "country": "Country",
+      "cr": "CR",
+      "value": "Value",
+      "categories": {
+        "uiKits": "UI Kits",
+        "templates": "Templates",
+        "saas": "SaaS"
+      },
+      "crDashboard": "Dashboard"
+    }
+  },
+  "notFound": {
+    "error": "ERROR",
+    "message": "We can’t seem to find the page you are looking for!",
+    "backHome": "Back to Home Page"
+  },
+  "marketing": {
+    "metrics": {
+      "avgClientRating": "Avg. Client Rating",
+      "instagramFollowers": "Instagram Followers",
+      "totalRevenue": "Total Revenue",
+      "vsLastMonth": "Vs last month"
+    },
+    "impressionChart": {
+      "title": "Impression & Data Traffic",
+      "totalRevenue": "Total Revenue",
+      "sales": "Sales",
+      "revenue": "Revenue"
+    },
+    "featuredCampaign": {
+      "title": "Featured Campaigns",
+      "viewMore": "View More",
+      "delete": "Delete",
+      "products": "Products",
+      "campaign": "Campaign",
+      "status": "Status",
+      "adsCampaign": "Ads campaign",
+      "campaigns": {
+        "growBrand": "Grow your brand by...",
+        "betterIdeas": "Make Better Ideas...",
+        "increaseTraffic": "Increase your website tra..."
+      },
+      "statuses": {
+        "success": "Success",
+        "pending": "Pending",
+        "failed": "Failed"
+      }
+    },
+    "trafficStats": {
+      "title": "Traffic Stats",
+      "viewMore": "View More",
+      "delete": "Delete",
+      "newSubscribers": "New Subscribers",
+      "conversionRate": "Conversion Rate",
+      "pageBounceRate": "Page Bounce Rate",
+      "thenLastWeek": "then last Week",
+      "newSales": "New Sales"
+    },
+    "trafficSource": {
+      "title": "Top Traffic Source",
+      "viewMore": "View More",
+      "delete": "Delete",
+      "viewAll": "View All"
+    }
+  },
+  "crm": {
+    "metrics": {
+      "activeDeal": "Active Deal",
+      "revenueTotal": "Revenue Total",
+      "closedDeals": "Closed Deals",
+      "lastMonth": "last month"
+    },
+    "statistics": {
+      "title": "Statistics",
+      "subtitle": "Target you’ve set for each month",
+      "avgYearlyProfit": "Avg. Yearly Profit",
+      "sales": "Sales",
+      "revenue": "Revenue"
+    },
+    "estimatedRevenue": {
+      "title": "Estimated Revenue",
+      "subtitle": "Target you’ve set for each month",
+      "goals": "June Goals",
+      "marketing": "Marketing",
+      "sales": "Sales"
+    },
+    "salesCategory": {
+      "title": "Sales Category",
+      "affiliate": "Affiliate",
+      "direct": "Direct",
+      "adsense": "Adsense",
+      "affiliateProgram": "Affiliate Program",
+      "directBuy": "Direct Buy",
+      "products": "Products",
+      "total": "Total",
+      "usedOf": "Used of"
+    },
+    "upcomingSchedule": {
+      "title": "Upcoming Schedule",
+      "schedules": {
+        "item1": {
+          "title": "Business Analytics Press",
+          "description": "Exploring the Future of Data-Driven +6 more"
+        },
+        "item2": {
+          "title": "Business Sprint",
+          "description": "Techniques from Business Sprint +2 more"
+        },
+        "item3": {
+          "title": "Customer Review Meeting",
+          "description": "Insights from the Customer Review Meeting +8 more"
+        }
+      }
+    },
+    "recentOrders": {
+      "title": "Recent Orders",
+      "dealId": "Deal ID",
+      "customer": "Customer",
+      "productService": "Product/Service",
+      "dealValue": "Deal Value",
+      "closeDate": "Close Date",
+      "status": "Status",
+      "action": "Action",
+      "products": {
+        "softwareLicense": "Software License",
+        "cloudHosting": "Cloud Hosting",
+        "webDomain": "Web Domain",
+        "sslCertificate": "SSL Certificate",
+        "premiumSupport": "Premium Support"
+      },
+      "statuses": {
+        "complete": "Complete",
+        "pending": "Pending",
+        "cancel": "Cancel"
+      }
+    },
+    "common": {
+      "search": "Search",
+      "allFilter": "All {{label}}",
+      "showingRange": "Showing {{start}}–{{end}} of {{total}}",
+      "previous": "Previous",
+      "next": "Next",
+      "cancel": "Cancel",
+      "saving": "Saving…",
+      "deleting": "Deleting…",
+      "delete": "Delete",
+      "edit": "Edit",
+      "new": "New",
+      "actions": "Actions",
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone",
+      "company": "Company",
+      "source": "Source",
+      "status": "Status",
+      "priority": "Priority",
+      "assignee": "Owner",
+      "unassigned": "Unassigned",
+      "created": "Created",
+      "jobTitle": "Job title",
+      "website": "Website",
+      "industry": "Industry",
+      "address": "Address",
+      "size": "Company size",
+      "title": "Title",
+      "description": "Description",
+      "dueAt": "Due date",
+      "notes": "Notes",
+      "noResults": "No results found",
+      "noResultsDescription": "Try adjusting your search or filters.",
+      "clearFilters": "Clear filters",
+      "type": "Type"
+    },
+    "errors": {
+      "forbidden": "You do not have permission to perform this action.",
+      "notFound": "This record no longer exists.",
+      "generic": "Something went wrong. Please try again.",
+      "nameRequired": "Name is required.",
+      "titleRequired": "Title is required.",
+      "bodyRequired": "Note cannot be empty.",
+      "subjectRequired": "Subject is required.",
+      "invalidEmail": "Enter a valid email address.",
+      "invalidStatus": "Invalid status value.",
+      "invalidType": "Invalid type value.",
+      "invalidPriority": "Invalid priority value.",
+      "invalidSource": "Invalid source value.",
+      "invalidAssignee": "Selected owner is not a member of this workspace.",
+      "invalidCompany": "Selected company was not found.",
+      "invalidDueDate": "Enter a valid due date.",
+      "invalidValue": "Deal value must be a positive number."
+    },
+    "leadStatus": {
+      "NEW": "New",
+      "CONTACTED": "Contacted",
+      "QUALIFIED": "Qualified",
+      "PROPOSAL": "Proposal",
+      "WON": "Won",
+      "LOST": "Lost"
+    },
+    "taskStatus": {
+      "OPEN": "Open",
+      "IN_PROGRESS": "In progress",
+      "BLOCKED": "Blocked",
+      "DONE": "Done",
+      "CANCELED": "Canceled"
+    },
+    "customerStatus": {
+      "ACTIVE": "Active",
+      "INACTIVE": "Inactive",
+      "CHURNED": "Churned"
+    },
+    "followUpStatus": {
+      "SCHEDULED": "Scheduled",
+      "COMPLETED": "Completed",
+      "MISSED": "Missed",
+      "CANCELED": "Canceled"
+    },
+    "followUpType": {
+      "CALL": "Call",
+      "EMAIL": "Email",
+      "MEETING": "Meeting",
+      "OTHER": "Other"
+    },
+    "priority": {
+      "LOW": "Low",
+      "MEDIUM": "Medium",
+      "HIGH": "High",
+      "URGENT": "Urgent"
+    },
+    "sources": {
+      "WEB_FORM": "Web form",
+      "REFERRAL": "Referral",
+      "IMPORT": "Import",
+      "COLD_CALL": "Cold call",
+      "SOCIAL": "Social",
+      "ADS": "Ads",
+      "EVENT": "Event",
+      "OTHER": "Other"
+    },
+    "activityType": {
+      "CREATED": "Created",
+      "STATUS_CHANGE": "Status change",
+      "ASSIGNMENT": "Assignment",
+      "NOTE": "Note",
+      "CALL": "Call",
+      "EMAIL": "Email",
+      "MEETING": "Meeting",
+      "FOLLOW_UP": "Follow-up",
+      "TASK": "Task",
+      "SYSTEM": "System"
+    },
+    "overview": {
+      "title": "CRM",
+      "subtitle": "Pipeline and workspace activity at a glance",
+      "openLeads": "Open leads",
+      "wonLeads": "Won leads",
+      "contacts": "Contacts",
+      "companies": "Companies",
+      "customers": "Customers",
+      "openTasks": "Open tasks",
+      "recentActivity": "Recent activity",
+      "viewAll": "View all activities",
+      "emptyTitle": "No activity yet",
+      "emptyDescription": "Activity will appear here as you work with leads, tasks, and follow-ups."
+    },
+    "leads": {
+      "title": "Leads",
+      "searchPlaceholder": "Search leads…",
+      "newLead": "New lead",
+      "editLead": "Edit lead",
+      "deleteTitle": "Delete lead?",
+      "deleteMessage": "This will permanently remove the lead, its notes, follow-ups, and history.",
+      "viewLead": "View lead",
+      "filters": {
+        "status": "Status",
+        "owner": "Owner"
+      },
+      "columns": {
+        "contact": "Contact",
+        "assignee": "Owner",
+        "source": "Source"
+      },
+      "emptyTitle": "No leads yet",
+      "emptyDescription": "Capture your first lead to start building your pipeline."
+    },
+    "contacts": {
+      "title": "Contacts",
+      "searchPlaceholder": "Search contacts…",
+      "newContact": "New contact",
+      "editContact": "Edit contact",
+      "deleteTitle": "Delete contact?",
+      "deleteMessage": "This will permanently remove the contact from this workspace.",
+      "filters": {
+        "owner": "Owner"
+      },
+      "columns": {
+        "company": "Company",
+        "assignee": "Owner"
+      },
+      "emptyTitle": "No contacts yet",
+      "emptyDescription": "Add contacts to keep track of the people you work with."
+    },
+    "companies": {
+      "title": "Companies",
+      "searchPlaceholder": "Search companies…",
+      "newCompany": "New company",
+      "editCompany": "Edit company",
+      "deleteTitle": "Delete company?",
+      "deleteMessage": "This will permanently remove the company. Linked contacts will be kept without a company.",
+      "columns": {
+        "contacts": "Contacts",
+        "website": "Website"
+      },
+      "emptyTitle": "No companies yet",
+      "emptyDescription": "Create companies to group your contacts and leads by account."
+    },
+    "customers": {
+      "title": "Customers",
+      "searchPlaceholder": "Search customers…",
+      "newCustomer": "New customer",
+      "editCustomer": "Edit customer",
+      "deleteTitle": "Delete customer?",
+      "deleteMessage": "This will permanently remove the customer from this workspace.",
+      "filters": {
+        "status": "Status",
+        "owner": "Owner"
+      },
+      "columns": {
+        "assignee": "Owner"
+      },
+      "emptyTitle": "No customers yet",
+      "emptyDescription": "Convert won leads or add customers manually to track accounts."
+    },
+    "tasks": {
+      "title": "Tasks",
+      "searchPlaceholder": "Search tasks…",
+      "newTask": "New task",
+      "editTask": "Edit task",
+      "deleteTitle": "Delete task?",
+      "deleteMessage": "This will permanently remove the task.",
+      "filters": {
+        "status": "Status",
+        "owner": "Owner"
+      },
+      "columns": {
+        "due": "Due",
+        "assignee": "Owner",
+        "lead": "Lead"
+      },
+      "emptyTitle": "No tasks yet",
+      "emptyDescription": "Create tasks to keep your follow-ups moving."
+    },
+    "activities": {
+      "title": "Activities",
+      "searchPlaceholder": "Search activities…",
+      "filters": {
+        "type": "Type"
+      },
+      "columns": {
+        "relatedTo": "Related to",
+        "actor": "By",
+        "when": "When"
+      },
+      "emptyTitle": "No activities yet",
+      "emptyDescription": "Actions on leads, tasks, and follow-ups will show up here."
+    },
+    "detail": {
+      "profile": "Lead profile",
+      "owner": "Owner",
+      "created": "Created",
+      "updated": "Updated",
+      "notes": "Notes",
+      "notePlaceholder": "Write a note for your team…",
+      "saveNote": "Save note",
+      "noNotes": "No notes yet",
+      "noNotesDescription": "Notes you and your team add will appear here.",
+      "followUps": "Follow-ups",
+      "newFollowUp": "Schedule follow-up",
+      "followUpType": "Type",
+      "followUpDue": "Due",
+      "followUpNotes": "Notes for this follow-up",
+      "noFollowUps": "No follow-ups scheduled",
+      "tasks": "Tasks",
+      "noTasks": "No tasks for this lead",
+      "timeline": "Activity timeline",
+      "noTimeline": "No activity recorded yet",
+      "logActivity": "Log activity",
+      "logType": "Type",
+      "logSubject": "Subject",
+      "logDescription": "Details (optional)",
+      "backToList": "All leads",
+      "newTask": "New task"
+    },
+    "loading": "Loading…",
+    "form": {
+      "value": "Deal Value"
+    }
+  },
+  "billing": {
+    "title": "Billing & plans",
+    "description": "Review your subscription, track usage against plan limits, and switch plans.",
+    "upgrade": {
+      "title": "Action required",
+      "subscription": "Your organization has no active subscription. Choose a plan to keep working.",
+      "expired": "Your subscription has expired. Choose a plan to restore access.",
+      "suspended": "Your subscription is suspended. Contact support or choose a plan to restore access.",
+      "readonly": "Your payment is past due. Your account is read-only until the subscription is active again.",
+      "module": "Your current plan does not include this module. Upgrade your plan to unlock it.",
+      "cta": "View plans"
+    },
+    "status": {
+      "title": "Current subscription",
+      "plan": "Plan",
+      "state": "State",
+      "trialEndsAt": "Trial ends",
+      "currentPeriodEnd": "Current period ends",
+      "cancelAtPeriodEnd": "Cancels at period end",
+      "none": "No subscription"
+    },
+    "state": {
+      "trial": "Trial",
+      "active": "Active",
+      "pastDue": "Past due",
+      "cancelled": "Cancelled",
+      "expired": "Expired",
+      "suspended": "Suspended",
+      "none": "No subscription"
+    },
+    "usage": {
+      "title": "Usage",
+      "description": "Current consumption against your plan limits.",
+      "users": "Users",
+      "leads": "Leads",
+      "customers": "Customers",
+      "projects": "Projects",
+      "storage": "Storage",
+      "unlimited": "Unlimited",
+      "of": "{{used}} of {{limit}}",
+      "usedOnly": "{{used}} used"
+    },
+    "plans": {
+      "title": "Plans",
+      "description": "Switch plans instantly. This demo does not process payments.",
+      "current": "Current plan",
+      "switch": "Switch to this plan",
+      "perMonth": "/ month",
+      "perYear": "/ year",
+      "free": "Free",
+      "trial": "{{count}}-day trial",
+      "limits": {
+        "users": "Users",
+        "leads": "Leads",
+        "customers": "Customers",
+        "projects": "Projects",
+        "storage": "Storage"
+      },
+      "unlimited": "Unlimited"
+    },
+    "history": {
+      "title": "Subscription history",
+      "description": "Recent plan and state changes.",
+      "empty": "No subscription events yet.",
+      "type": {
+        "created": "Subscription created",
+        "planChanged": "Plan changed",
+        "stateChanged": "State changed",
+        "renewed": "Renewed",
+        "cancelled": "Cancelled",
+        "limitReached": "Limit reached"
+      },
+      "transition": "{{from}} → {{to}}",
+      "planLabel": "Plan: {{plan}}"
+    },
+    "errors": {
+      "subscriptionMissing": "No active subscription was found for your organization. Please choose a plan.",
+      "subscriptionReadOnly": "Your subscription is past due. Update your plan to make changes.",
+      "subscriptionExpired": "Your subscription has expired. Please choose a plan to restore access.",
+      "subscriptionSuspended": "Your subscription is suspended. Please contact support.",
+      "userLimit": "You have reached the user limit for your current plan. Please upgrade your subscription.",
+      "leadLimit": "You have reached the lead limit for your current plan. Please upgrade your subscription.",
+      "customerLimit": "You have reached the customer limit for your current plan. Please upgrade your subscription.",
+      "projectLimit": "You have reached the project limit for your current plan. Please upgrade your subscription.",
+      "storageLimit": "You have reached the storage limit for your current plan. Please upgrade your subscription.",
+      "moduleNotInPlan": "This module is not included in your current plan. Please upgrade your subscription.",
+      "forbidden": "You do not have permission to manage billing.",
+      "planUnavailable": "That plan is not available.",
+      "generic": "Something went wrong. Please try again."
+    }
+  },
+  "superAdmin": {
+    "brand": {
+      "name": "Agency Platform",
+      "tagline": "Super Admin"
+    },
+    "nav": {
+      "dashboard": "Dashboard",
+      "organizations": "Organizations",
+      "onboarding": "Onboarding",
+      "auditLog": "Audit log"
+    },
+    "header": {
+      "signOut": "Sign out"
+    },
+    "dashboard": {
+      "title": "Platform overview",
+      "description": "Organizations, subscriptions, and activity across the platform.",
+      "metrics": {
+        "totalOrganizations": "Total organizations",
+        "activeOrganizations": "Active organizations",
+        "trialOrganizations": "Trial organizations",
+        "suspendedOrganizations": "Suspended organizations",
+        "totalUsers": "Total users",
+        "activeSubscriptions": "Active subscriptions",
+        "mrr": "Monthly recurring revenue"
+      },
+      "recentOrganizations": {
+        "title": "Recent organizations",
+        "empty": "No organizations have been created yet.",
+        "columns": {
+          "organization": "Organization",
+          "status": "Status",
+          "plan": "Plan",
+          "members": "Members",
+          "created": "Created"
+        },
+        "view": "View"
+      },
+      "recentActivity": {
+        "title": "Recent activity",
+        "empty": "No activity recorded yet.",
+        "by": "by"
+      }
+    },
+    "organizations": {
+      "title": "Organizations",
+      "description": "Create and manage client organizations.",
+      "searchPlaceholder": "Search by name, slug, or industry",
+      "filters": {
+        "status": "Status",
+        "allStatuses": "All statuses"
+      },
+      "statuses": {
+        "ACTIVE": "Active",
+        "TRIAL": "Trial",
+        "SUSPENDED": "Suspended",
+        "ARCHIVED": "Archived"
+      },
+      "columns": {
+        "organization": "Organization",
+        "status": "Status",
+        "plan": "Plan",
+        "members": "Members",
+        "created": "Created",
+        "actions": "Actions"
+      },
+      "view": "View",
+      "suspend": "Suspend",
+      "activate": "Activate",
+      "noResults": "No organizations match your search.",
+      "empty": "No organizations have been created yet.",
+      "create": "New organization",
+      "wizard": "Onboarding wizard",
+      "createModal": {
+        "title": "Create organization",
+        "name": "Organization name",
+        "slug": "Slug",
+        "slugHint": "Lowercase letters, numbers, and dashes.",
+        "businessType": "Industry",
+        "template": "Industry template",
+        "templateHint": "Sets the default modules, navigation, roles and dashboard widgets.",
+        "ownerName": "Owner name",
+        "ownerEmail": "Owner email",
+        "ownerPassword": "Owner password",
+        "ownerHint": "For new users only — minimum 8 characters. Existing users are added as owners.",
+        "submit": "Create organization"
+      }
+    },
+    "onboarding": {
+      "title": "Client onboarding",
+      "description": "Create a client organization with template, branding, modules, owner and subscription in one guided flow.",
+      "safety": "Nothing is saved until the organization is created in the final step — all records are written in one transaction.",
+      "steps": {
+        "business": "Business",
+        "template": "Template",
+        "branding": "Branding",
+        "modules": "Modules",
+        "owner": "Owner",
+        "subscription": "Subscription",
+        "review": "Review",
+        "create": "Create"
+      },
+      "stepIndicator": "Step {current} of {total}",
+      "back": "Back",
+      "next": "Next",
+      "createButton": "Create organization",
+      "creating": "Creating…",
+      "business": {
+        "title": "Business information",
+        "description": "Core details for the client organization.",
+        "name": "Business name",
+        "slug": "Slug",
+        "slugHint": "Lowercase letters, numbers and dashes. Generated from the name until you edit it.",
+        "businessType": "Business type",
+        "email": "Email",
+        "phone": "Phone",
+        "website": "Website",
+        "address": "Address"
+      },
+      "template": {
+        "title": "Industry template",
+        "description": "A template sets default modules, navigation order, roles and dashboard widgets. Modules can be adjusted in the next step.",
+        "defaultModules": "Default modules",
+        "noModules": "This template uses core modules only."
+      },
+      "branding": {
+        "title": "Branding",
+        "description": "Logo and colors applied across the client dashboard and sign-in screens.",
+        "logo": "Logo URL",
+        "favicon": "Favicon URL",
+        "primaryColor": "Primary color",
+        "secondaryColor": "Secondary color",
+        "colorHint": "Hex value such as #465fff.",
+        "preview": "Preview"
+      },
+      "modules": {
+        "title": "Modules",
+        "description": "These are the template defaults. Toggle the modules this client should use.",
+        "coreNote": "Core modules are always enabled.",
+        "enabled": "Enabled",
+        "disabled": "Disabled",
+        "empty": "This template has no optional modules.",
+        "planWarning": "The {plan} plan does not include: {modules}. Clients will be prompted to upgrade."
+      },
+      "owner": {
+        "title": "Owner account",
+        "description": "The owner gets full administrative access to the organization.",
+        "name": "Owner name",
+        "email": "Owner email",
+        "password": "Password",
+        "passwordHint": "Minimum 8 characters. Leave empty if the email already belongs to an existing user."
+      },
+      "subscription": {
+        "title": "Subscription",
+        "description": "Choose the plan this client starts on.",
+        "perMonth": "/ month",
+        "trialNote": "{days}-day trial included",
+        "free": "Free",
+        "recommended": "Selected"
+      },
+      "review": {
+        "title": "Review",
+        "description": "Check the configuration before creating the organization.",
+        "business": "Business",
+        "template": "Template",
+        "branding": "Branding",
+        "modules": "Modules",
+        "owner": "Owner",
+        "subscription": "Subscription",
+        "notSet": "Not set",
+        "templateDefaults": "Template defaults",
+        "passwordSet": "Password set",
+        "passwordExisting": "Existing user — no password"
+      },
+      "confirm": {
+        "title": "Create organization",
+        "description": "One transaction writes the organization, owner, subscription, modules, branding, roles and permissions. A failure rolls everything back.",
+        "ready": "Ready to create {name}."
+      },
+      "success": {
+        "title": "Organization created",
+        "description": "{name} has been fully configured: organization, owner, subscription, modules, branding, roles and permissions.",
+        "orgName": "Organization",
+        "slug": "Slug",
+        "status": "Status",
+        "template": "Template",
+        "owner": "Owner",
+        "email": "Email",
+        "plan": "Plan",
+        "state": "Subscription state",
+        "modules": "Enabled modules",
+        "roles": "Custom roles",
+        "noRoles": "None",
+        "viewOrganization": "View organization",
+        "createAnother": "Create another",
+        "states": {
+          "TRIAL": "Trial",
+          "ACTIVE": "Active",
+          "PAST_DUE": "Past due",
+          "CANCELLED": "Cancelled",
+          "EXPIRED": "Expired",
+          "SUSPENDED": "Suspended"
+        }
+      }
+    },
+    "detail": {
+      "back": "All organizations",
+      "business": {
+        "title": "Business information",
+        "name": "Name",
+        "slug": "Slug",
+        "businessType": "Industry",
+        "email": "Email",
+        "phone": "Phone",
+        "website": "Website",
+        "address": "Address",
+        "template": "Template",
+        "timezone": "Timezone",
+        "currency": "Currency",
+        "dateFormat": "Date format",
+        "status": "Status",
+        "members": "Members",
+        "created": "Created",
+        "subscription": "Subscription",
+        "noSubscription": "No subscription"
+      },
+      "settings": {
+        "title": "Settings",
+        "description": "Core settings for this organization.",
+        "name": "Name",
+        "slug": "Slug",
+        "businessType": "Industry",
+        "timezone": "Timezone",
+        "currency": "Currency",
+        "dateFormat": "Date format",
+        "save": "Save settings"
+      },
+      "branding": {
+        "title": "Branding",
+        "description": "Logo and colors used across the client dashboard.",
+        "primaryColor": "Primary color",
+        "secondaryColor": "Secondary color",
+        "logo": "Logo URL",
+        "favicon": "Favicon URL",
+        "save": "Save branding"
+      },
+      "users": {
+        "title": "Users",
+        "description": "Members of this organization.",
+        "columns": {
+          "user": "User",
+          "role": "Role",
+          "status": "Status",
+          "joined": "Joined",
+          "actions": "Actions"
+        },
+        "add": "Add user",
+        "addModal": {
+          "title": "Add user",
+          "email": "Email",
+          "name": "Name",
+          "nameHint": "Only needed for new users.",
+          "password": "Password",
+          "passwordHint": "Only needed for new users — minimum 8 characters.",
+          "role": "Role",
+          "submit": "Add user"
+        },
+        "remove": "Remove",
+        "removeDescription": "Remove {email} from this organization?",
+        "cancel": "Cancel",
+        "empty": "No users in this organization.",
+        "statuses": {
+          "ACTIVE": "Active",
+          "INVITED": "Invited",
+          "SUSPENDED": "Suspended"
+        },
+        "roles": {
+          "owner": "Owner",
+          "admin": "Admin",
+          "manager": "Manager",
+          "staff": "Staff",
+          "viewer": "Viewer"
+        }
+      },
+      "subscription": {
+        "title": "Subscription",
+        "none": "No subscription yet. Assign a plan to activate this organization.",
+        "plan": "Plan",
+        "state": "State",
+        "currentPeriod": "Current period",
+        "trialEnds": "Trial ends",
+        "cancelAtPeriodEnd": "Cancels at period end",
+        "assign": "Assign plan",
+        "assignAction": "Assign",
+        "trial": "Trial controls",
+        "days": "Days",
+        "startTrial": "Start trial",
+        "extendTrial": "Extend trial",
+        "suspend": "Suspend subscription",
+        "reactivate": "Reactivate subscription"
+      },
+      "modules": {
+        "title": "Modules",
+        "description": "Enable or disable modules for this organization.",
+        "core": "Core — always enabled",
+        "enabled": "Enabled",
+        "disabled": "Disabled"
+      },
+      "activity": {
+        "title": "Activity logs",
+        "description": "Recent activity inside this organization.",
+        "empty": "No activity recorded yet.",
+        "levels": {
+          "INFO": "Info",
+          "WARNING": "Warning",
+          "ERROR": "Error",
+          "AUDIT": "Audit"
+        },
+        "by": "by"
+      }
+    },
+    "auditLog": {
+      "title": "Audit log",
+      "description": "Sensitive actions performed by super admins.",
+      "columns": {
+        "when": "When",
+        "actor": "Actor",
+        "organization": "Organization",
+        "action": "Action"
+      },
+      "superAdmin": "Super Admin",
+      "platform": "Platform",
+      "empty": "No audit entries yet.",
+      "actions": {
+        "organizationCreated": "Super Admin created {org}.",
+        "organizationUpdated": "Super Admin updated {org}'s details.",
+        "organizationBrandingUpdated": "Super Admin updated {org}'s branding.",
+        "organizationSuspended": "Super Admin suspended {org}.",
+        "organizationActivated": "Super Admin activated {org}.",
+        "planAssigned": "Super Admin assigned the {plan} plan to {org}.",
+        "planChanged": "Super Admin changed {org}'s plan from {from} to {to}.",
+        "trialStarted": "Super Admin started a {days}-day trial for {org} on the {plan} plan.",
+        "trialExtended": "Super Admin extended {org}'s trial by {days} days.",
+        "subscriptionSuspended": "Super Admin suspended {org}'s subscription.",
+        "subscriptionReactivated": "Super Admin reactivated {org}'s subscription.",
+        "moduleEnabled": "Super Admin enabled the {module} module for {org}.",
+        "moduleDisabled": "Super Admin disabled the {module} module for {org}.",
+        "memberAdded": "Super Admin added {email} to {org} as {role}.",
+        "memberRoleChanged": "Super Admin changed {email}'s role in {org} to {role}.",
+        "memberRemoved": "Super Admin removed {email} from {org}."
+      }
+    },
+    "errors": {
+      "unauthenticated": "You must be signed in to do that.",
+      "forbidden": "Only super admins can perform this action.",
+      "notFound": "Organization not found.",
+      "generic": "Something went wrong. Please try again.",
+      "required": "This field is required.",
+      "invalidEmail": "Enter a valid email address.",
+      "slugInvalid": "Use lowercase letters, numbers, and dashes only.",
+      "slugTaken": "That slug is already in use.",
+      "passwordShort": "Password must be at least 8 characters.",
+      "invalidRole": "Invalid role.",
+      "memberExists": "That user is already a member of this organization.",
+      "lastOwner": "An organization must keep at least one owner.",
+      "coreModule": "Core modules cannot be disabled.",
+      "samePlan": "That organization is already on this plan.",
+      "subscriptionMissing": "This organization has no subscription. Assign a plan first.",
+      "invalidDays": "Enter a number of days between 1 and 90.",
+      "notTrial": "This subscription is not on a trial.",
+      "alreadySuspended": "The subscription is already suspended.",
+      "notSuspended": "The subscription is already active.",
+      "suspendedSubscription": "The subscription is suspended. Reactivate it first.",
+      "invalidStatus": "Invalid organization status.",
+      "invalidPlan": "That plan is not available.",
+      "invalidColor": "Enter a valid hex color such as #465fff.",
+      "invalidTemplate": "Choose a valid industry template.",
+      "invalidModule": "That module is not part of the selected template.",
+      "emailTaken": "That email address is already registered."
+    }
+  },
+  "templates": {
+    "names": {
+      "general": "General Business",
+      "agency": "Agency",
+      "retail": "Retail",
+      "restaurant": "Restaurant",
+      "service": "Service Business",
+      "education": "Education"
+    },
+    "descriptions": {
+      "general": "Classic operations workspace with sales, projects, finance and reports.",
+      "agency": "Client work with leads, projects, invoices and expenses.",
+      "retail": "Products, stock, orders, suppliers and storefront reporting.",
+      "restaurant": "Orders, menu and front-of-house staffing for hospitality.",
+      "service": "Pipeline, projects and billing for service teams.",
+      "education": "Students, courses and coursework for learning providers."
+    },
+    "terms": {
+      "agency": {
+        "customers": "Clients"
+      },
+      "restaurant": {
+        "products": "Menu",
+        "top-products": "Popular Items"
+      }
+    }
+  },
+  "stocks": {
+    "title": "Stocks",
+    "dividend": {
+      "title": "Dividend",
+      "series": "Dividend",
+      "viewMore": "View More",
+      "delete": "Delete"
+    },
+    "portfolioPerformance": {
+      "title": "Portfolio Performance",
+      "subtitle": "Here is your performance stats of each month",
+      "series": "Portfolio Performance"
+    },
+    "trendingStocks": {
+      "title": "Trending Stocks",
+      "shortStock": "Short Stock",
+      "buyStock": "Buy Stock"
+    },
+    "watchlist": {
+      "title": "My Watchlist",
+      "viewMore": "View More",
+      "delete": "Delete"
+    },
+    "latestTransactions": {
+      "title": "Latest Transactions",
+      "searchPlaceholder": "Search...",
+      "table": {
+        "name": "Name",
+        "date": "Date",
+        "price": "Price",
+        "category": "Category",
+        "status": "Status"
+      },
+      "actions": {
+        "bought": "Bought {symbol}",
+        "sell": "Sell {symbol}"
+      },
+      "categories": {
+        "finance": "Finance"
+      },
+      "statuses": {
+        "success": "Success",
+        "pending": "Pending",
+        "failed": "Failed"
+      }
+    }
+  },
+  "saas": {
+    "title": "SaaS",
+    "metrics": {
+      "overview": "Overview",
+      "totalRevenue": "Total Revenue",
+      "activeUsers": "Active Users",
+      "clv": "Customer Lifetime Value",
+      "cac": "Customer Acquisition Cost"
+    },
+    "churnRate": {
+      "title": "Churn Rate",
+      "subtitle": "Downgrade to Free plan",
+      "thanLastWeek": "than last Week",
+      "series": "Churn Rate",
+      "viewMore": "View More",
+      "delete": "Delete"
+    },
+    "userGrowth": {
+      "title": "User Growth",
+      "subtitle": "New signups website + mobile",
+      "thanLastWeek": "than last Week",
+      "series": "Revenue",
+      "viewMore": "View More",
+      "delete": "Delete"
+    },
+    "conversionFunnel": {
+      "title": "Conversion Funnel",
+      "viewMore": "View More",
+      "delete": "Delete",
+      "series": {
+        "adImpressions": "Ad Impressions",
+        "websiteSession": "Website Session",
+        "appDownload": "App Download",
+        "newUsers": "New Users"
+      }
+    },
+    "recentInvoices": {
+      "title": "Recent Invoices",
+      "table": {
+        "serialNo": "Serial No:",
+        "closeDate": "Close Date",
+        "user": "User",
+        "amount": "Amount",
+        "status": "Status"
+      },
+      "statuses": {
+        "complete": "Complete",
+        "pending": "Pending",
+        "cancelled": "Cancelled"
+      }
+    },
+    "productPerformance": {
+      "title": "Product Performance",
+      "viewMore": "View More",
+      "delete": "Delete",
+      "tabs": {
+        "dailySales": "Daily Sales",
+        "onlineSales": "Online Sales",
+        "newUsers": "New Users"
+      },
+      "digitalProduct": "Digital Product",
+      "physicalProduct": "Physical Product",
+      "avgDailySales": "Average Daily Sales",
+      "totalOnlineSales": "Total Online Sales",
+      "addedLastMonth": "Added last month",
+      "totalNewUsers": "Total New Users",
+      "series": {
+        "sales": "Sales",
+        "revenue": "Revenue"
+      }
+    },
+    "activities": {
+      "title": "Activities",
+      "viewMore": "View More",
+      "delete": "Delete",
+      "newInvoice": "New invoice",
+      "createdInvoice": "created invoice"
+    }
+  },
+  "logistics": {
+    "title": "Logistics",
+    "metrics": {
+      "totalOrders": "Total Orders",
+      "ordersInTransit": "Orders in Transit"
+    },
+    "deliveryStatistics": {
+      "title": "Delivery Statistics",
+      "subtitle": "Total number of deliveries 70.5K",
+      "monthly": "Monthly",
+      "yearly": "Yearly",
+      "shipment": "Shipment",
+      "delivery": "Delivery"
+    },
+    "revenueEarned": {
+      "totalRevenue": "Total revenue earned",
+      "shippedQuantities": "Shipped quantities",
+      "newSales": "New Sales"
+    },
+    "deliveryVehicle": {
+      "title": "Delivery Vehicles",
+      "subtitle": "Vehicles operating on the road",
+      "thanLastWeek": "than last Week",
+      "onRoute": "On-route"
+    },
+    "trackingDelivery": {
+      "title": "Tracking Delivery",
+      "subtitle": "Last viewed delivery history"
+    },
+    "trackingProgress": {
+      "trackingId": "Tracking ID",
+      "inTransit": "In Transit",
+      "pickedUp": "Picked up",
+      "delivered": "Delivered"
+    },
+    "deliveryMan": {
+      "courier": "Courier"
+    },
+    "deliveriesActivity": {
+      "title": "Delivery Activities",
+      "subtitle": "Track your recent shipping activities",
+      "tabs": {
+        "all": "All",
+        "delivered": "Delivered",
+        "inTransit": "In-Transit",
+        "pending": "Pending",
+        "processing": "Processing"
+      },
+      "filter": {
+        "button": "Filter",
+        "category": "Category",
+        "searchCategory": "Search category...",
+        "company": "Company",
+        "searchCompany": "Search company...",
+        "apply": "Apply"
+      },
+      "table": {
+        "orderId": "Order ID",
+        "category": "Category",
+        "company": "Company",
+        "arrivalTime": "Arrival Time",
+        "route": "Route",
+        "price": "Price",
+        "status": "Status"
+      },
+      "categories": {
+        "furniture": "Furniture",
+        "clothing": "Clothing",
+        "books": "Books",
+        "automotive": "Automotive",
+        "electronics": "Electronics",
+        "health": "Health",
+        "toys": "Toys",
+        "kitchen": "Kitchen",
+        "beauty": "Beauty",
+        "sports": "Sports"
+      },
+      "statuses": {
+        "delivered": "Delivered",
+        "inTransit": "In Transit",
+        "canceled": "Canceled"
+      },
+      "pagination": {
+        "showing": "Showing",
+        "to": "to",
+        "of": "of",
+        "page": "Page"
+      }
+    }
+  },
+  "aiDashboard": {
+    "stats": {
+      "users": "Users",
+      "projects": "Projects",
+      "revenue": "Revenue",
+      "paidUsers": "Paid Users",
+      "last30Days": "Last 30 Days"
+    },
+    "userRevenue": {
+      "title": "Users & Revenue Statistics",
+      "subtitle": "Visualize month-to-month progress and engagement.",
+      "users": "Users",
+      "revenue": "Revenue",
+      "monthly": "Monthly",
+      "quarterly": "Quarterly",
+      "annually": "Annually"
+    },
+    "apiToken": {
+      "title": "API Token Usages",
+      "totalApiTokenUsed": "Total API Token Used",
+      "tokenUsed": "Token used",
+      "configuredKey": "{count, plural, one {# API key configured} other {# API keys configured}}",
+      "viewAllUsageDetails": "View All Usage Details"
+    },
+    "userAnalytics": {
+      "title": "User Analytics",
+      "subtitle": "Platform user insights",
+      "totalUsers": "Total Users",
+      "freeUsers": "Free Users",
+      "paidUsers": "Paid Users",
+      "ofTotalUser": "of total user",
+      "thisMonth": "This Month",
+      "fromLastMonth": "from last month",
+      "thisYear": "This Year",
+      "fromLastYear": "from last year"
+    },
+    "projectAnalytics": {
+      "title": "Projects Analytics",
+      "subtitle": "View detailed project insights",
+      "totalProjects": "Total Projects",
+      "today": "Today",
+      "yesterday": "Yesterday",
+      "projectCreated": "Project created",
+      "thisMonth": "This Month",
+      "fromLastMonth": "from last month",
+      "thisYear": "This Year",
+      "fromLastYear": "from last year"
+    },
+    "recentTransactions": {
+      "title": "Recent Transactions",
+      "searchPlaceholder": "Search...",
+      "filter": "Filter",
+      "table": {
+        "paidBy": "Paid By",
+        "packageName": "Package Name",
+        "price": "Price",
+        "paidDate": "Paid Date",
+        "status": "Status",
+        "actions": "Actions"
+      },
+      "packages": {
+        "starterMonthly": "Starter - Monthly",
+        "growthYearly": "Growth - Yearly",
+        "premiumMonthly": "Premium - Monthly"
+      },
+      "statuses": {
+        "active": "Active",
+        "expired": "Expired"
+      },
+      "pagination": {
+        "previous": "Previous",
+        "next": "Next",
+        "pageOf": "Page {current} of {total}"
+      }
+    }
+  },
+  "sales": {
+    "salesStats": {
+      "title": "Sales Dashboard",
+      "subtitle": "Track revenue, performance, and sales growth in real-time",
+      "selectDateRange": "Select date range",
+      "export": "Export",
+      "totalRevenue": "Total Revenue",
+      "totalSales": "Total Sales",
+      "conversionRate": "Conversion Rate",
+      "refundRate": "Refund Rate",
+      "vsLastMonth": "vs last month",
+      "newSales": "New Sales"
+    },
+    "userRevenueStats": {
+      "title": "Users & Revenue Statistics",
+      "subtitle": "Visualize month-to-month progress and engagement.",
+      "daily": "Daily",
+      "weekly": "Weekly",
+      "monthly": "Monthly",
+      "onlineSales": "Online Sales",
+      "offlineSales": "Offline Sales"
+    },
+    "userRetention": {
+      "title": "User Retention",
+      "subtitle": "User engagement over time",
+      "increasedVsLastWeek": "Increased vs last week"
+    },
+    "salesByChannel": {
+      "title": "Sales by Channel",
+      "subtitle": "Channel performance overview",
+      "increasedVsLastWeek": "Increased vs last week",
+      "channels": {
+        "website": "Website",
+        "email": "Email",
+        "socialMedia": "Social Media"
+      },
+      "table": {
+        "channels": "Channels",
+        "metric": "Metric",
+        "total": "Total"
+      }
+    },
+    "salesByCountry": {
+      "title": "Sales by Country",
+      "subtitle": "Country-wise sales overview",
+      "countries": {
+        "usa": "USA",
+        "france": "France",
+        "japan": "Japan",
+        "germany": "Germany"
+      }
+    },
+    "topProducts": {
+      "title": "Top Products",
+      "table": {
+        "productName": "Product Name",
+        "category": "Category",
+        "sales": "Sales",
+        "earnings": "Earnings",
+        "stocks": "Stocks",
+        "status": "Status"
+      },
+      "products": {
+        "classicDenimJacket": "Classic Denim Jacket",
+        "slimFitChinos": "Slim Fit Chinos",
+        "organicCottonTShirt": "Organic Cotton T-Shirt",
+        "leatherAnkleBoots": "Leather Ankle Boots"
+      },
+      "variants": {
+        "threeSizes": "3 Sizes",
+        "fourColors": "4 Colors",
+        "fiveColors": "5 Colors",
+        "sixSizes": "6 Sizes"
+      },
+      "categories": {
+        "jacket": "Jacket",
+        "pants": "Pants",
+        "tShirt": "T-Shirt",
+        "footwear": "Footwear"
+      },
+      "statuses": {
+        "inStock": "In Stock",
+        "lowStock": "Low Stock",
+        "outOfStock": "Out of Stock"
+      }
+    }
+  },
+  "finance": {
+    "totalBalanceOverview": {
+      "title": "Total Balance",
+      "overview": "Overview of your current funds",
+      "thanLastMonth": "than last month",
+      "primaryAccount": "Primary Account:",
+      "seeDetails": "See Details",
+      "transfer": "Transfer",
+      "received": "Received",
+      "balance": "Balance"
+    },
+    "stats": {
+      "totalBalance": "Total Balance",
+      "monthlyIncome": "Monthly Income",
+      "totalSpent": "Total Spent",
+      "savingRate": "Saving Rate",
+      "thanLastMonth": "than last month",
+      "goalProgress": "Goal: 30% - 3.9% to go"
+    },
+    "cashflow": {
+      "title": "Cashflow Overview",
+      "totalRevenue": "Total Revenue",
+      "income": "Income",
+      "expense": "Expense"
+    },
+    "spending": {
+      "title": "Spending",
+      "yearly": "Yearly",
+      "monthly": "Monthly",
+      "total": "Total",
+      "categories": {
+        "activity": "Activity",
+        "onlinePurchases": "Online Purchases",
+        "groceries": "Groceries",
+        "digitalGoods": "Digital Goods",
+        "stationery": "Stationery",
+        "others": "Others"
+      }
+    },
+    "quickSend": {
+      "title": "Quick send",
+      "sendFrom": "Send From",
+      "currency": "Currency",
+      "amount": "Amount",
+      "sendMoney": "Send Money"
+    },
+    "myCards": {
+      "title": "My Cards",
+      "addCard": "Add Card",
+      "virtualCard": "Virtual Card",
+      "recentTransactions": "Recent Transactions",
+      "seeAllTransactions": "See All Transactions",
+      "transactions": {
+        "paymentReceived": "Payment Received",
+        "cashbackDesc": "Cashback from Stellar Rewards",
+        "netflixSubscription": "Netflix Subscription",
+        "netflixDesc": "September subscription charge",
+        "moneyReceived": "Money received",
+        "paypalDesc": "Payment received via PayPal",
+        "googleAds": "Google Ads",
+        "googleAdsDesc": "Payment received form google ads"
+      }
+    },
+    "transactionsTable": {
+      "title": "Recent Transactions",
+      "searchPlaceholder": "Search...",
+      "filter": "Filter",
+      "table": {
+        "orderId": "Order ID",
+        "activity": "Activity",
+        "price": "Price",
+        "date": "Date",
+        "status": "Status"
+      },
+      "activities": {
+        "hotelBooking": "Hotel Booking",
+        "onlineShopping": "Online Shopping",
+        "gamePurchase": "Game Purchase",
+        "utilityBillPayment": "Utility Bill Payment",
+        "onlineCourseEnrollment": "Online Course Enrollment"
+      },
+      "statuses": {
+        "completed": "Completed",
+        "inProgress": "In Progress"
+      }
+    }
+  },
+  "auth": {
+    "signIn": {
+      "submit": "Sign in",
+      "submitting": "Signing in...",
+      "invalid": "Invalid email or password.",
+      "disabled": "This account has been disabled.",
+      "noOrganization": "This account is not linked to an organization yet.",
+      "required": "Email and password are required.",
+      "error": "Something went wrong. Please try again.",
+      "tooMany": "Too many sign-in attempts. Please wait a few minutes and try again."
+    },
+    "signUp": {
+      "submit": "Sign Up",
+      "submitting": "Creating account...",
+      "emailTaken": "An account with this email already exists.",
+      "weakPassword": "Password must be at least 8 characters.",
+      "missingFields": "Please fill in all required fields.",
+      "termsRequired": "You must accept the terms and conditions.",
+      "orgNameLabel": "Organization name",
+      "orgNamePlaceholder": "e.g. Acme Bakery",
+      "error": "Something went wrong. Please try again.",
+      "tooMany": "Too many attempts. Please wait a few minutes and try again."
+    },
+    "aside": {
+      "tagline": "Sign in to your workspace"
+    }
+  },
+  "dashboard": {
+    "welcome": "Welcome back, {name}",
+    "overview": "Here is what is happening at {org} today.",
+    "metrics": {
+      "totalLeads": "Total Leads",
+      "newLeads": "New Leads",
+      "customers": "Customers",
+      "activeDeals": "Active Deals",
+      "revenue": "Revenue",
+      "pendingTasks": "Pending Tasks",
+      "conversionRate": "Conversion Rate"
+    },
+    "months": {
+      "jan": "Jan",
+      "feb": "Feb",
+      "mar": "Mar",
+      "apr": "Apr",
+      "may": "May",
+      "jun": "Jun",
+      "jul": "Jul",
+      "aug": "Aug",
+      "sep": "Sep",
+      "oct": "Oct",
+      "nov": "Nov",
+      "dec": "Dec"
+    },
+    "revenueChart": {
+      "title": "Revenue Overview",
+      "desc": "Monthly revenue compared to last year",
+      "thisYear": "This year",
+      "lastYear": "Last year"
+    },
+    "recentLeads": {
+      "title": "Recent Leads",
+      "desc": "Latest leads added to your sales pipeline",
+      "name": "Name",
+      "company": "Company",
+      "source": "Source",
+      "status": "Status",
+      "value": "Value"
+    },
+    "leadStatus": {
+      "new": "New",
+      "qualified": "Qualified",
+      "proposal": "Proposal",
+      "negotiation": "Negotiation"
+    },
+    "widgets": {
+      "recentOrders": {
+        "title": "Recent Orders",
+        "desc": "Latest orders across your business",
+        "id": "Order",
+        "customer": "Customer",
+        "status": "Status",
+        "total": "Total",
+        "statuses": {
+          "paid": "Paid",
+          "pending": "Pending",
+          "failed": "Failed"
+        }
+      },
+      "topProducts": {
+        "title": "Top Products",
+        "desc": "Best sellers this period",
+        "product": "Product",
+        "category": "Category",
+        "sold": "Sold",
+        "revenue": "Revenue"
+      },
+      "lowStock": {
+        "title": "Low Stock",
+        "desc": "Items running below reorder level",
+        "product": "Product",
+        "sku": "SKU",
+        "stock": "In stock",
+        "reorderAt": "Reorder at"
+      },
+      "recentTasks": {
+        "title": "Upcoming Tasks",
+        "desc": "Tasks due across your projects",
+        "task": "Task",
+        "project": "Project",
+        "due": "Due",
+        "status": "Status",
+        "statuses": {
+          "open": "Open",
+          "progress": "In progress",
+          "done": "Done",
+          "blocked": "Blocked",
+          "canceled": "Canceled"
+        }
+      },
+      "recentStudents": {
+        "title": "Recent Students",
+        "desc": "Newly enrolled students",
+        "name": "Name",
+        "course": "Course",
+        "enrolled": "Enrolled",
+        "status": "Status",
+        "statuses": {
+          "active": "Active",
+          "pending": "Pending"
+        }
+      },
+      "empty": "No data yet"
+    }
+  },
+  "settings": {
+    "title": "Settings",
+    "description": "Manage your organization profile, branding, people and modules.",
+    "organization": "Organization",
+    "organizationDesc": "Your organization details",
+    "name": "Name",
+    "slug": "Slug",
+    "businessType": "Business type",
+    "currency": "Currency",
+    "timezone": "Timezone",
+    "branding": {
+      "title": "Branding",
+      "description": "Logo, colors and the sign-in experience for your organization.",
+      "logo": "Logo",
+      "logoHint": "Used in the sidebar and header. Path starting with / or an https URL.",
+      "favicon": "Favicon",
+      "loginLogo": "Login logo",
+      "loginLogoHint": "Shown on the sign-in page. Falls back to the logo above.",
+      "loginBackground": "Login background",
+      "loginBackgroundHint": "Background image behind the sign-in panel.",
+      "primaryColor": "Primary color",
+      "secondaryColor": "Secondary color",
+      "clear": "Clear",
+      "save": "Save branding",
+      "saved": "Branding updated.",
+      "preview": "Preview",
+      "previewDesc": "How your branding looks across the app.",
+      "empty": "Not set"
+    },
+    "brandingDesc": "Colors and logo used across the application",
+    "primaryColor": "Primary color",
+    "secondaryColor": "Secondary color",
+    "logo": "Logo",
+    "plan": "Plan",
+    "planDesc": "Current subscription and enabled modules",
+    "status": "Status",
+    "currentPeriodEnd": "Current period ends",
+    "enabledModules": "Enabled modules",
+    "industryTemplate": "Template",
+    "memberRole": "Your role",
+    "nav": {
+      "overview": "Overview",
+      "business": "Business",
+      "branding": "Branding",
+      "users": "Users",
+      "roles": "Roles",
+      "modules": "Modules"
+    },
+    "business": {
+      "title": "Business settings",
+      "description": "Company name, workspace URL and regional preferences.",
+      "name": "Company name",
+      "namePlaceholder": "e.g. Acme Bakery",
+      "slug": "Workspace URL",
+      "businessType": "Business type",
+      "businessTypePlaceholder": "e.g. Retail bakery",
+      "currency": "Currency",
+      "timezone": "Timezone",
+      "dateFormat": "Date format",
+      "save": "Save changes",
+      "saved": "Business settings updated."
+    },
+    "users": {
+      "title": "Users",
+      "description": "People with access to this organization.",
+      "add": "Add user",
+      "addTitle": "Add user",
+      "name": "Name",
+      "email": "Email",
+      "password": "Password",
+      "passwordHint": "At least 8 characters. Only needed for new users.",
+      "role": "Role",
+      "joined": "Joined",
+      "actions": "Actions",
+      "remove": "Remove",
+      "removeTitle": "Remove user",
+      "removeConfirm": "Remove {email} from this organization?",
+      "noUsers": "No users found.",
+      "existingUserNote": "If the email belongs to an existing user, no password is required.",
+      "status": "Status",
+      "cancel": "Cancel",
+      "statuses": {
+        "ACTIVE": "Active",
+        "INVITED": "Invited",
+        "SUSPENDED": "Suspended"
+      }
+    },
+    "roles": {
+      "title": "Roles",
+      "description": "System and custom roles and the permissions they grant.",
+      "create": "Create role",
+      "createTitle": "Create role",
+      "editTitle": "Edit role",
+      "roleName": "Role name",
+      "roleKey": "Key",
+      "roleKeyHint": "Lowercase letters, numbers and dashes.",
+      "permissions": "Permissions",
+      "members": "Members",
+      "type": "Type",
+      "system": "System",
+      "custom": "Custom",
+      "delete": "Delete",
+      "deleteTitle": "Delete role",
+      "deleteConfirm": "Delete this custom role?",
+      "save": "Save role",
+      "noPermissionsNote": "A role without permissions grants no access.",
+      "empty": "No custom roles yet."
+    },
+    "modules": {
+      "title": "Modules",
+      "description": "Enable or disable features for this organization.",
+      "core": "Core",
+      "enabled": "Enabled",
+      "disabled": "Disabled",
+      "coreLocked": "Core modules are always on.",
+      "empty": "No modules available."
+    },
+    "permissionGroups": {
+      "dashboard": "Dashboard",
+      "organization": "Organization",
+      "settings": "Settings",
+      "members": "Members",
+      "roles": "Roles",
+      "modules": "Modules",
+      "subscription": "Subscription",
+      "crm": "CRM",
+      "sales": "Sales",
+      "tasks": "Tasks",
+      "projects": "Projects",
+      "finance": "Finance",
+      "reports": "Reports",
+      "catalog": "Catalog",
+      "education": "Education",
+      "activity": "Activity"
+    },
+    "errors": {
+      "forbidden": "You don't have permission to change these settings.",
+      "generic": "Something went wrong. Please try again.",
+      "notFound": "The requested record was not found.",
+      "required": "This field is required.",
+      "invalidEmail": "Enter a valid email address.",
+      "passwordShort": "Password must be at least 8 characters.",
+      "invalidRole": "Select a valid role.",
+      "memberExists": "This user is already a member.",
+      "lastOwner": "You can't remove or demote the last owner.",
+      "invalidColor": "Enter a valid hex color like #465fff.",
+      "invalidUrl": "Enter a path starting with / or an http(s) URL.",
+      "invalidDateFormat": "Select a valid date format.",
+      "invalidCurrency": "Enter a valid 3-letter currency code.",
+      "invalidTimezone": "Enter a valid timezone.",
+      "roleKeyInvalid": "Use lowercase letters, numbers and dashes.",
+      "roleKeyTaken": "That key is already in use.",
+      "roleInUse": "Reassign members using this role first.",
+      "roleSystem": "System roles can't be modified.",
+      "coreModule": "Core modules can't be disabled."
+    }
+  },
+  "noAccess": {
+    "title": "Access restricted",
+    "description": "Your role or organization modules do not allow access to this area. If you think this is a mistake, contact your organization administrator.",
+    "goHome": "Go to home"
+  },
+  "modulePage": {
+    "comingSoon": "Coming soon",
+    "description": "The {module} module is enabled for your organization. This workspace is being prepared and will be available soon.",
+    "enabled": "Module enabled"
+  },
+  "errorPage": {
+    "title": "Something went wrong",
+    "description": "An unexpected error occurred while loading this page.",
+    "retry": "Try again"
+  },
+  "calendarPage": {
+    "title": "Calendar",
+    "description": "Manage leads, follow-ups, and tasks on a shared calendar.",
+    "breadcrumb": "Calendar"
+  }
+}
