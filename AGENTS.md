@@ -19,7 +19,7 @@ src/
 │   │   ├── (full-width-pages)/ # no dashboard shell, e.g. (auth)/, coming-soon/
 │   │   ├── (layouts-example)/ # sidebar layout variants (layout-one … six)
 │   │   └── layout.tsx, not-found.tsx
-│   ├── favicon.ico, globals.css
+│   ├── globals.css, manifest.ts  # global styles + web app manifest (icons live in public/)
 ├── components/
 │   ├── ui/                    # primitives: button, modal, table, tabs…
 │   ├── form/                  # Form, Label, Select + input/, switch/

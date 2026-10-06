@@ -1,19 +1,19 @@
 import { requirePageAuth } from "@/server/auth/guards";
 import { toSessionPayload } from "@/server/auth/payload";
-import { buildBrandVars } from "@/utils/branding";
+import { buildBrandVars, PRODUCT_NAME } from "@/utils/branding";
 import type { Metadata } from "next";
 import AdminShell from "./AdminShell";
 
 export async function generateMetadata(): Promise<Metadata> {
   const ctx = await requirePageAuth();
+  const tenantFavicon = ctx.organization.favicon;
   return {
     title: {
-      default: `${ctx.organization.name} | Dashboard`,
-      template: `%s | ${ctx.organization.name}`,
+      default: `${PRODUCT_NAME} | Dashboard`,
+      template: `%s | ${PRODUCT_NAME}`,
     },
-    icons: {
-      icon: ctx.organization.favicon ?? "/favicon.ico",
-    },
+    description: `${PRODUCT_NAME} — Business management, CRM and operations platform.`,
+    ...(tenantFavicon ? { icons: { icon: tenantFavicon } } : {}),
   };
 }
 

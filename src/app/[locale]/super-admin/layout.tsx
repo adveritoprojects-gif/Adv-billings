@@ -1,5 +1,6 @@
 import { requirePageSuperAdmin } from "@/server/auth/guards";
 import { toSessionPayload } from "@/server/auth/payload";
+import { PRODUCT_NAME } from "@/utils/branding";
 import type { Metadata } from "next";
 import SuperAdminShell from "./SuperAdminShell";
 
@@ -7,12 +8,10 @@ export async function generateMetadata(): Promise<Metadata> {
   await requirePageSuperAdmin();
   return {
     title: {
-      default: "Super Admin",
-      template: "%s | Super Admin",
+      default: `${PRODUCT_NAME} | Super Admin`,
+      template: `%s | ${PRODUCT_NAME}`,
     },
-    icons: {
-      icon: "/favicon.ico",
-    },
+    description: `${PRODUCT_NAME} | Super Admin — platform operations by Adverito.`,
   };
 }
 

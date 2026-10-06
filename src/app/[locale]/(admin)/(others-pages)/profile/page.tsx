@@ -1,14 +1,13 @@
 import PageBreadcrumb from "@/components/common/PageBreadCrumb";
 import DangerZone from "@/components/user-profile/DangerZone";
 import Security from "@/components/user-profile/Security";
-import UserAddressCard from "@/components/user-profile/UserAddressCard";
 import UserMetaCard from "@/components/user-profile/UserMetaCard";
-import { Metadata } from "next";
+import { PRODUCT_NAME } from "@/utils/branding";
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Profile | TailAdmin - Next.js Admin Dashboard Template",
-  description:
-    "Manage your personal information, security settings, and preference on the TailAdmin Profile page.",
+  title: "Profile",
+  description: `Manage your ${PRODUCT_NAME} personal information and account security.`,
 };
 
 export default function Profile() {
@@ -21,7 +20,6 @@ export default function Profile() {
         </h3>
         <div className="space-y-6">
           <UserMetaCard />
-          <UserAddressCard />
           <Security />
           <DangerZone />
         </div>

@@ -4,7 +4,8 @@ import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 
 export const metadata: Metadata = {
-  title: "Activate your account | Adverito",
+  title: "Activate your account | Adv Billings",
+  description: "Adv Billings — Business management software by Adverito.",
   robots: { index: false, follow: false },
 };
 

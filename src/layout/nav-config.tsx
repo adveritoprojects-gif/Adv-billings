@@ -9,9 +9,7 @@ import {
   GridIcon,
   GroupIcon,
   ListIcon,
-  PageIcon,
   PieChartIcon,
-  PlugInIcon,
   SettingsIcon,
   TableIcon,
   TaskIcon,
@@ -261,53 +259,5 @@ export const otherNavItems: NavItem[] = [
     key: "userProfile",
     icon: <UserCircleIcon />,
     path: "/profile",
-  },
-  {
-    key: "forms",
-    icon: <ListIcon />,
-    subItems: [{ key: "formElements", path: "/form-elements" }],
-  },
-  {
-    key: "tables",
-    icon: <TableIcon />,
-    subItems: [
-      { key: "basicTables", path: "/basic-tables" },
-    ],
-  },
-  {
-    key: "pages",
-    icon: <PageIcon />,
-    subItems: [
-      { key: "blankPage", path: "/blank" },
-      { key: "error404", path: "/error-404" },
-    ],
-  },
-  {
-    key: "charts",
-    icon: <PieChartIcon />,
-    subItems: [
-      { key: "lineChart", path: "/line-chart" },
-      { key: "barChart", path: "/bar-chart" },
-    ],
-  },
-  {
-    key: "uiElements",
-    icon: <BoxCubeIcon />,
-    subItems: [
-      { key: "alerts", path: "/alerts" },
-      { key: "avatar", path: "/avatars" },
-      { key: "badge", path: "/badge" },
-      { key: "buttons", path: "/buttons" },
-      { key: "images", path: "/images" },
-      { key: "videos", path: "/videos" },
-    ],
-  },
-  {
-    key: "authentication",
-    icon: <PlugInIcon />,
-    subItems: [
-      { key: "signIn", path: "/signin" },
-      { key: "signUp", path: "/signup" },
-    ],
   },
 ];

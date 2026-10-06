@@ -10,6 +10,7 @@ import {
 } from "@/server/actions/invitations";
 import { useLocale, useTranslations } from "next-intl";
 import { useActionState, useState } from "react";
+import { PRODUCT_NAME } from "@/utils/branding";
 
 const initialState: AcceptInvitationState = {};
 
@@ -45,7 +46,7 @@ export default function AcceptInvitationForm({
     <div className="flex min-h-screen items-center justify-center bg-gray-50 px-4 py-10 dark:bg-gray-900">
       <div className="w-full max-w-lg rounded-xl border border-gray-200 bg-white p-8 shadow-theme-md dark:border-gray-800 dark:bg-gray-900">
         <p className="text-theme-xs font-medium tracking-wide text-brand-500 uppercase">
-          Adverito
+          {PRODUCT_NAME}
         </p>
         <h1 className="mt-2 text-title-sm font-semibold text-gray-800 dark:text-white/90">
           {t("title")}

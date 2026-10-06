@@ -103,7 +103,11 @@ export function buildBrandVars(
   };
 }
 
-export const PRODUCT_NAME = "Adverito";
+export const PRODUCT_NAME = "Adv Billings";
+
+export const PRODUCT_COMPANY = "Adverito";
+
+export const PRODUCT_TAGLINE = "Business management software by Adverito";
 
 export const DEFAULT_AUTH_LOGO = "/images/logo/auth-logo.svg";
 export const DEFAULT_FAVICON = "/favicon.ico";
